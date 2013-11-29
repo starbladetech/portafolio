@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'your@yourdomain.com'; // Your Email
+$admin_email = 'starblade.tech@gmail.com'; // Your Email
 $message_min_length = 5; // Min Message Length
 
 
@@ -17,7 +17,7 @@ class Contact_Form{
 		
 		$this->name = stripslashes($details['name']);
 		$this->email = trim($details['email']);
-		$this->subject = 'Contact from Your Website'; // Subject 
+		$this->subject = 'Contacto desde web Starblade Tech.'; // Subject 
 		$this->message = stripslashes($details['message']);
 	
 		$this->email_admin = $email_admin;
@@ -81,7 +81,7 @@ class Contact_Form{
 		if($mail)
 		{
 			$this->response_status = 1;
-			$this->response_html = '<p>Thank You!</p>';
+			$this->response_html = '<p>Gracias!</p>';
 		}
 	}
 
